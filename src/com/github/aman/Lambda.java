@@ -23,13 +23,22 @@ public class Lambda {
             }
         };
         g.greet("amol");
+
+        //calling the default method
+        greeting.show();
+        g.show();
     }
 
 }
 
 /**
- * Functional interface
+ * Functional interface:
+ * an interface with only one abstract method
+ * is called functional interface
  */
 interface Greeting{
     void greet(String s);
+    default void show(){
+        System.out.println("shows my name");
+    }
 }
