@@ -35,7 +35,10 @@ public class Lambda {
  * Functional interface:
  * an interface with only one abstract method
  * is called functional interface
+ * @FunctionalInterface annotation indicates the interface
+ * is a functional interface, it is optional but recommended to use
  */
+@FunctionalInterface
 interface Greeting{
     void greet(String s);
     default void show(){
